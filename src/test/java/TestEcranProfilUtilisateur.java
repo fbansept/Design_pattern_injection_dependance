@@ -4,13 +4,12 @@ import org.junit.jupiter.api.Test;
 
 public class TestEcranProfilUtilisateur {
 
-    private Assembleur assembleur;
+    private AssembleurTestUnitaire assembleur;
 
     @BeforeEach
     void prepare() {
-        assembleur = new Assembleur();
+        assembleur = new AssembleurTestUnitaire();
     }
-
     @Test
     void testGenerePdfProfilUtilisateur() throws Exception {
         EcranProfilUtilisateur ecran = assembleur.getEcranProfilUtilisateur();
